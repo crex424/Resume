@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+    --primary-bg-color: azure;
+    --primary-color: black;
+}
+
+@media only screen and (width: 600px) and (height: 768px) and (-webkit-device-pixel-ratio: 3) { 
+    body {
+        padding-top: env(safe-area-inset-top);
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+
+}
+
+img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+a:hover {
+    background-color: darkgray;
+}
+
+html {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1em;
+}
+
+body {
+    margin: auto;
+    background-color: var(--primary-bg-color);
+
+}
+
+p {
+    font-size:small;
+}
+
+h3 {
+    font-size: large;
+    margin-bottom: 0%;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+#summary-text {
+    font-size: large;
+}
+
+ul {
+    line-height: 0.95em;
+    list-style: square;
+}
+.relevant-classwork {
+    display: flex;
+    flex-flow: column wrap;
+    line-height: 0.01em;
+    font-size: small;
+    margin:0%;
+
+}
+
+.college-info  {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 0%;
+    
+}
+
+.graduation {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+}
+
+#contact-info {
+    display: flex;
+    flex-flow: row wrap;
+    padding-left: .5em;
+}
+
+#contact-info h3 {
+    padding-right: 1em;
+    padding-bottom: 0em;
+    margin: 0%;
+}
+
+#main {
+    margin: 0 auto;
+    padding: 0 1rem 2rem 1rem;
+}
+
+#projects {
+    display: flex;
+    justify-content:flex-start;
+    flex-flow: column wrap;
+}
+
+.project-item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
